@@ -1,31 +1,42 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+emailjs.init('YOUR_PUBLIC_KEY');
+
 import { FaGithub, FaHackerrank, FaLinkedin } from 'react-icons/fa';
 import { FaSquareXTwitter } from 'react-icons/fa6';
 
 const Contact = () => {
   const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault(); // Prevent page reload
-    emailjs
-      .sendForm(
-        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
-        form.current,
-        'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
-      )
-      .then(
-        (result) => {
-          console.log('Email sent:', result.text);
-          alert('Message sent successfully!');
-        },
-        (error) => {
-          console.error('Error sending email:', error.text);
-          alert('Failed to send message. Please try again.');
-        }
-      );
-  };
+ const sendEmail = (e) => {
+  e.preventDefault(); // Prevent page reload
+
+  if (!form.current) {
+    console.error("Form reference is null");
+    alert("Form submission failed. Please refresh the page and try again.");
+    return;
+  }
+
+  emailjs
+    .sendForm(
+      "service_xxxxxx", // Replace with your actual EmailJS Service ID
+      "template_xxxxxx", // Replace with your actual EmailJS Template ID
+      form.current,
+      "your_public_key" // Replace with your actual EmailJS Public Key
+    )
+    .then(
+      (result) => {
+        console.log("Email sent:", result.text);
+        alert("Message sent successfully!");
+        form.current.reset(); // Reset form after successful submission
+      },
+      (error) => {
+        console.error("Error sending email:", error);
+        alert("Failed to send message. Please check your EmailJS settings.");
+      }
+    );
+};
+
 
   return (
     <section id="contact" className="bg-gray-950 py-16 px-6">

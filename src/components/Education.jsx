@@ -11,14 +11,14 @@ const education = [
       degree: "Higher Secondary (11th-12th) ",
       institution: "Government Higher Secondary School",
       year: "2020 - 2022",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit Vel molestiae.",
+      description: "I successfully completed my 11th-12th at GHSS with excellence.",
       icon: "🎓",
     },
     {
       degree: "Secondary (10th)",
       institution: "Government Higher Secondary School",
-      year: "2016",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit Vel molestiae.",
+      year: "2020",
+      description: "I successfully completed my 10th standard at GHSS with excellence.",
       icon: "🎓",
     },
   ];

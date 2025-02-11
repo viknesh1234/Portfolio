@@ -10,7 +10,7 @@ const Project = () => {
           title: "ObstacleAvoidanceRobot",
           description:
           "An Arduino-based obstacle-avoiding robot project using C++ with ultrasonic sensors, servo motors, and Bluetooth/voice control integration.",
-          techStack: [" C++ ", "<AFMotor.h>", "<Servo.h>"],
+          techStack: [" C++ "],
           //link: "https://business420.netlify.app/",
           github: 'https://github.com/viknesh1234/ObstacleAvoidanceRobot',
           image: Digital, // Replace with your project screenshot

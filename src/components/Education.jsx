@@ -1,22 +1,22 @@
 import React from 'react'
 const education = [
     {
-      degree: "Information Technoloy (B.Tech)",
-      institution: "Nandha College Technoloy",
+      degree: "Information Technology (B.Tech)",
+      institution: "Nandha College of Technology",
       year: "2022 - 2026",
-      description: "Graduated with a strong foundation in critical thinking and problem-solving.",
+      description: "Pursuing with a strong foundation in critical thinking and problem-solving.",
       icon: "🎓",
     },
     {
       degree: "Higher Secondary (11th-12th) ",
-      institution: "Government Higher Secondary School",
+      institution: "Government Higher Secondary School Vellode",
       year: "2020 - 2022",
       description: "I successfully completed my 11th-12th at GHSS with excellence.",
       icon: "🎓",
     },
     {
       degree: "Secondary (10th)",
-      institution: "Government Higher Secondary School",
+      institution: "Government Higher Secondary School Vellode",
       year: "2020",
       description: "I successfully completed my 10th standard at GHSS with excellence.",
       icon: "🎓",

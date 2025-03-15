@@ -29,7 +29,7 @@ const Project = () => {
           description:
             "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea accusantium impedit facere. Sequi, deserunt recusandae.",
           techStack: ["Next.js", "MongoDB", "Clerk Authentication"],
-          link: "https://clothify-two.vercel.app/",
+        //  link: "https://clothify-two.vercel.app/",
           github: 'https://github.com/rohitsingh93300/YT-Clothify',
           image: Clothify, // Replace with your project screenshot
         },
@@ -51,7 +51,7 @@ const Project = () => {
                             ))}
                         </div>
                         <div className='flex gap-3'>
-                            <a href={project.link} target='_blank' rel='noopener noreferrer' className='inline-block bg-blue-500 text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-600 transition-colors'>View Project</a>
+                           
                             <a href={project.github} target='_blank' rel='noopener noreferrer' className='flex gap-2 items-center bg-gray-800 text-white px-6 py-2 rounded-lg shadow-md hover:bg-gray-900 transition-colors'><FaGithub/> Github</a>
                         </div>
                     </div>

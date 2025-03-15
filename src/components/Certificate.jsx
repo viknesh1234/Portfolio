@@ -12,7 +12,7 @@ import Secondprice from "../assets/Secondprice.png";
 import Internship from "../assets/Internship.png";
 import Ksr from "../assets/Ksr.png";
 import Iee from "../assets/Iee.png";
-import SHRIT from "../assets/SHRIT.png";
+import SriShti from "../assets/SriShti.png";
 import Online from "../assets/Online.png";
 
 const certificates = [
@@ -23,12 +23,12 @@ const certificates = [
   { title: "Hackthon", institution: "SNS College Coimbatore", type: "Event", image: Google },
   { title: "WorkShop", institution: "KSR IET College Tiruchengode", type: "Event", image: Ksr },
   { title: "International Webinar", institution: "Study World College Coimbatore", type: "Event", image: Iee },
-  { title: "International Webinar", institution: "Study World College Coimbatore", type: "Event", image: Online },
-  { title: "International Webinar", institution: "Study World College Coimbatore", type: "Event", image: SHRIT },
+  { title: "FSD Webinar", institution: "Code Purple", type: "Event", image: Online },
+  { title: "Symposium", institution: "PSG College Coimbatore", type: "Event", image: SriShti },
   
 ];
 
-const chunkSize = 6; // Show only 6 certificates per slide
+const chunkSize = 6; 
 const certificateChunks = [];
 for (let i = 0; i < certificates.length; i += chunkSize) {
   certificateChunks.push(certificates.slice(i, i + chunkSize));

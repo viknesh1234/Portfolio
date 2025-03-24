@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+  .stairs-animation {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+  }
+  
+  .stairs-animation span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.2), 0 0 0 8px rgba(255, 255, 255, 0.1),
+      0 0 20px rgba(255, 255, 255, 1);
+    animation: stairs-fall 3s linear infinite;
+  }
+  
+  .stairs-animation span:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 150px;
+    height: 2px;
+    background: linear-gradient(90deg, #fff, transparent);
+  }
+  
+  @keyframes stairs-fall {
+    0% {
+      transform: translateX(0) translateY(0);
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.8;
+    }
+    100% {
+      transform: translateX(-400px) translateY(100px);
+      opacity: 0;
+    }
+  }
+  
+  .stairs-animation span:nth-child(1) {
+    top: 0;
+    right: 0;
+    left: initial;
+    animation-delay: 0;
+    animation-duration: 5s;
+  }
+  
+  .stairs-animation span:nth-child(2) {
+    top: 20px;
+    right: 60px;
+    left: initial;
+    animation-delay: 0.3s;
+    animation-duration: 3s;
+  }
+  
+  .stairs-animation span:nth-child(3) {
+    top: 40px;
+    right: 120px;
+    left: initial;
+    animation-delay: 0.6s;
+    animation-duration: 4s;
+  }
+  
+  .stairs-animation span:nth-child(4) {
+    top: 60px;
+    right: 180px;
+    left: initial;
+    animation-delay: 1s;
+    animation-duration: 5s;
+  }
+  
+  .stairs-animation span:nth-child(5) {
+    top: 80px;
+    right: 240px;
+    left: initial;
+    animation-delay: 1.2s;
+    animation-duration: 3.5s;
+  }
+  
+  .stairs-animation span:nth-child(6) {
+    top: 100px;
+    right: 300px;
+    left: initial;
+    animation-delay: 1.5s;
+    animation-duration: 4s;
+  }
+  
+  .stairs-animation span:nth-child(7) {
+    top: 120px;
+    right: 360px;
+    left: initial;
+    animation-delay: 1.8s;
+    animation-duration: 3s;
+  }
+  

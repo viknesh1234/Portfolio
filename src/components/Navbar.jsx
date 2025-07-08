@@ -25,7 +25,7 @@ const Navbar = () => {
             <a href="/"><li className='cursor-pointer'>Home</li></a>
             <a href="#about"><li className='cursor-pointer'>About</li></a>
             <a href="#education"><li className='cursor-pointer'>Education & Experience</li></a>
-             <a href="#certificate"><li className='cursor-pointer'>Certificate</li></a>
+             <a href="#certificates"><li className='cursor-pointer'>Certificates</li></a>
             <a href="#project"><li className='cursor-pointer'>Projects</li></a>
             <a href="#contact">
               <button className='px-3 py-1 cursor-pointer rounded-md bg-blue-500 text-white flex items-center gap-1 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#33CCCC,0_0_15px_#33CCCC,0_0_30px_#33CCCC] shadow-blue-500 border-blue-400 border-2'>

@@ -1,7 +1,17 @@
 import React, { useRef } from 'react';
 import { FaGithub, FaHackerrank, FaLinkedin } from 'react-icons/fa';
-import { FaSquareXTwitter } from 'react-icons/fa6';
 import emailjs from 'emailjs-com';
+
+// Custom LeetCode SVG Icon Component
+const LeetCodeIcon = ({ className }) => (
+  <svg
+    viewBox="0 0 256 256"
+    className={`w-7 h-7 fill-current ${className}`}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M204.96 110.4 132.64 38.4a14.94 14.94 0 0 0-21.28 0L70.88 78.4a8 8 0 0 0 11.36 11.28L122.72 49.6a.94.94 0 0 1 1.28 0l72.32 72a1 1 0 0 1 0 1.44l-72.32 72a.94.94 0 0 1-1.28 0l-40.48-40.08a8 8 0 1 0-11.36 11.28l40.48 40.08a14.94 14.94 0 0 0 21.28 0l72.32-72a15 15 0 0 0 0-21.44ZM142.24 152a8 8 0 0 0-11.36 0l-15.52 15.44a8 8 0 1 0 11.36 11.28l15.52-15.44a8 8 0 0 0 0-11.28Z" />
+  </svg>
+);
 
 const Contact = () => {
   const form = useRef();
@@ -11,13 +21,13 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        'service_0mzqcye',         // ✅ Your Service ID
-        'template_rq8fr2q',        // ✅ Your Template ID
+        'service_0mzqcye',
+        'template_rq8fr2q',
         form.current,
-        'h6jDjgYY_Fv6HBoSe'        // ✅ Your Public Key
+        'h6jDjgYY_Fv6HBoSe'
       )
       .then(
-        (result) => {
+        () => {
           alert('✅ Message sent successfully!');
           form.current.reset();
         },
@@ -39,15 +49,6 @@ const Contact = () => {
           <p className="text-gray-300 my-5">
             Feel free to reach out via email or message. Let’s create something amazing together!
           </p>
-          <h3 className="text-2xl font-semibold text-gray-300">Email</h3>
-          <p className="text-blue-500 mt-1">
-            <a href="mailto:vikneshr2710@gmail.com" className="hover:underline">vikneshr2710@gmail.com</a>
-          </p>
-
-          <h3 className="text-2xl font-semibold text-gray-300 mt-6">Phone</h3>
-          <p className="text-blue-500 mt-1">
-            <a href="tel:+919944924920" className="hover:underline">+91 9944 92 4920</a>
-          </p>
 
           <h3 className="text-2xl font-semibold text-gray-300 mt-6">Follow Me</h3>
           <div className="flex gap-4 justify-center mt-4 text-3xl">
@@ -61,7 +62,7 @@ const Contact = () => {
               <FaLinkedin className="text-blue-400 hover:text-blue-700" />
             </a>
             <a href="https://leetcode.com/u/vikneshr1027/" target="_blank" rel="noreferrer">
-              <FaSquareXTwitter className="text-blue-400 hover:text-blue-600" />
+              <LeetCodeIcon className="text-yellow-500 hover:text-yellow-600 transition" />
             </a>
           </div>
         </div>

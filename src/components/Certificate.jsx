@@ -4,7 +4,6 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { Autoplay, Pagination } from 'swiper/modules';
 
-// Certificate Images
 import CodeTech from "../assets/CodeTech.png";
 import Google from "../assets/Google.png";
 import Java from "../assets/Java.png";
@@ -29,10 +28,17 @@ const Certificates = () => {
   ];
 
   return (
-    <div id='certificates' className='py-16 bg-gray-900 z- 50 text-gray-300'>
-      <h1 className='text-center text-3xl lg:text-5xl font-extrabold mb-4 text-white-900'>My Certificates</h1>
-      <h2 className='text-center text-2xl lg:text-4xl font-bold mb-10'>Achievements & Events</h2>
-      
+    <div
+      id='certificates'
+      className='scroll-mt-24 py-16 bg-gray-900 text-gray-300 z-50'
+    >
+      <h1 className='text-center text-3xl lg:text-5xl font-extrabold mb-4 text-white'>
+        My Certificates
+      </h1>
+      <h2 className='text-center text-2xl lg:text-4xl font-bold mb-10'>
+        Achievements & Events
+      </h2>
+
       <div className='max-w-6xl mx-auto px-4'>
         <Swiper
           style={{
@@ -75,8 +81,8 @@ const Certificates = () => {
               </div>
             </SwiperSlide>
           ))}
-          <div className='swiper-pagination my-10'></div>
         </Swiper>
+        <div className='swiper-pagination mt-10'></div>
       </div>
     </div>
   );

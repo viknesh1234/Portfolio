@@ -66,7 +66,7 @@ const Hero = () => {
             <FaGithub className="hover:text-blue-400" />
             <FaHackerrank className="hover:text-blue-400" />
             <FaLinkedin className="hover:text-blue-400" />
-            <FaSquareXTwitter className="hover:text-blue-400" />
+           
           </div>
         </div>
         <div className="relative group">
